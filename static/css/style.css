@@ -218,3 +218,5 @@ ul.chipy { margin-top: 0; }
 .hero .tlacitka .tlacitko { padding-left:1em; padding-right:1em; white-space:nowrap; }
 .karta h3 { align-items:flex-start; }
 @media (max-width: 59.99rem) { .budova-hero { min-height:0; } .hero-obrazky { margin-bottom:0; } }
+.rampa-foto img { mix-blend-mode: normal; max-width: 44rem; border-radius: 2px; }
+.karta h3 { align-items: flex-start; min-height: 2.6em; }
