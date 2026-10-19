@@ -179,3 +179,27 @@ button[type="submit"] { justify-self: start; border-radius: 2px; font-weight: 60
 .logo-text, .logo-text small { white-space: nowrap; }
 .logo-text small { display: inline; }
 @media (max-width: 52rem) { .hero-obrazky img.h1o { left: 0; width: 34%; } .hero-grid { padding-bottom: var(--space-4); } }
+
+/* v3: hero s fotkou až k okraji, rampy s jednou fotkou, karty v pevném boxu */
+.hero-grid { padding-block: var(--space-4) var(--space-5); }
+.hero-obrazky .budova-hero::before { display: none; }
+.hero-obrazky .budova-hero img { clip-path: none; aspect-ratio: 16 / 10; width: 100%; object-fit: cover; object-position: 66% 50%; }
+.hero-obrazky { margin-inline: calc(-1 * var(--gutter)); }
+.tlacitka { margin-top: var(--space-3); }
+@media (min-width: 60rem) {
+  .hero-grid { width: 100%; max-width: none; margin: 0; padding-block: 0 var(--space-3); gap: var(--space-5); grid-template-columns: minmax(0, 1fr) 60%; padding-left: max(var(--gutter), calc((100vw - var(--wrap)) / 2)); }
+  .hero-obrazky { margin: 0; align-self: stretch; }
+  .hero-obrazky .budova-hero, .hero-obrazky .budova-hero img { height: 100%; min-height: 28rem; }
+  .hero-obrazky .budova-hero img { aspect-ratio: auto; }
+}
+.rampy { display: grid; gap: var(--space-3); }
+.rampy .uvod-r { color: var(--muted); max-width: 44rem; }
+.rampa-foto { margin-block: var(--space-2); }
+.rampa-foto img { width: 100%; max-width: 50rem; margin-inline: auto; height: auto; background: none; border: 0; padding: 0; }
+.rampy .dva { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+@media (max-width: 30rem) { .rampy .dva { grid-template-columns: 1fr; } }
+.karty { align-items: stretch; }
+.karta { grid-template-rows: auto auto 1fr; }
+.karta .fotka { aspect-ratio: 4 / 3; width: 100%; overflow: hidden; }
+.karta .fotka img { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: contain; }
+.karta h3 { min-height: 2.4em; display: flex; align-items: flex-end; }
