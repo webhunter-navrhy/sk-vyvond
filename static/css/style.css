@@ -143,3 +143,5 @@ button[type="submit"] { justify-self: start; border-radius: 2px; font-weight: 60
 .paticka a { color: #fff; }
 
 .logo { gap: 0.6rem; } .logo-text { font-size: 1.35rem; letter-spacing: 0.02em; } .logo-text small { font-size: 0.7em; font-weight: 600; color: var(--muted); }
+.karta .fotka img { max-width: 24rem; margin-inline: auto; }
+.fotka.velka img { max-width: 100%; }
