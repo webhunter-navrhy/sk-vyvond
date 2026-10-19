@@ -214,3 +214,7 @@ button[type="submit"] { justify-self: start; border-radius: 2px; font-weight: 60
 ul.karty { margin-bottom: var(--space-4); }
 ul.chipy { margin-top: 0; }
 @media (min-width: 60rem) { .hero-obrazky .budova-hero { min-height: 34rem; } }
+.hero .tlacitka { display:flex; flex-wrap:wrap; gap:12px; }
+.hero .tlacitka .tlacitko { padding-left:1em; padding-right:1em; white-space:nowrap; }
+.karta h3 { align-items:flex-start; }
+@media (max-width: 59.99rem) { .budova-hero { min-height:0; } .hero-obrazky { margin-bottom:0; } }
