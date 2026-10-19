@@ -220,3 +220,6 @@ ul.chipy { margin-top: 0; }
 @media (max-width: 59.99rem) { .budova-hero { min-height:0; } .hero-obrazky { margin-bottom:0; } }
 .rampa-foto img { mix-blend-mode: normal; max-width: 44rem; border-radius: 2px; }
 .karta h3 { align-items: flex-start; min-height: 2.6em; }
+@media (min-width: 60rem) { .hero .tlacitka { flex-wrap: nowrap; gap: 10px; } .hero .tlacitka .tlacitko { padding-left: .8em; padding-right: .8em; font-size: .95rem; } .hero { padding-bottom: 0; } #produkty { padding-top: 5rem; } }
+@media (max-width: 59.99rem) { .hero { padding-bottom: 0; } #produkty { padding-top: 3rem; } }
+.rampa-foto img { max-width: 52rem; width: 100%; }
