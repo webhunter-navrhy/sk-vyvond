@@ -1,0 +1,55 @@
+{
+  "slug": "sk-vyvond",
+  "nazev": "VYVOND, s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-vyvond/",
+  "base": "/sk-vyvond/",
+  "lang": "sk",
+  "popis": "Predaj manipulačnej techniky, nakladacie rampy, servis vysokozdvižných a paletových vozíkov a náhradné diely. Vrútky, dodávky po celom Slovensku.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "budova.jpg",
+  "logo": "logo.jpg",
+  "theme_color": "#ffffff",
+  "typ": "LocalBusiness",
+  "ico": "36397172",
+  "kontakt": {
+    "email": "vyvond@vyvond.sk",
+    "telefon": "+421 908 901 917",
+    "adresa": {
+      "ulice": "Francúzskych partizánov 4628",
+      "psc": "038 61",
+      "mesto": "Vrútky",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu vyvond.sk"
+  },
+  "nav": [
+    {
+      "text": "Produkty",
+      "href": "#produkty"
+    },
+    {
+      "text": "Rampy",
+      "href": "#rampy"
+    },
+    {
+      "text": "Servis",
+      "href": "#servis"
+    },
+    {
+      "text": "Náhradné diely",
+      "href": "#diely"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

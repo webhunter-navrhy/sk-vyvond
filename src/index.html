@@ -1,0 +1,113 @@
+{% extends "_base.html" %}
+{% set titulek = 'VYVOND, s.r.o. – manipulačná technika, rampy a servis · Vrútky' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="stitok">Vrútky · dodávky po celom Slovensku</p>
+      <h1>Manipulačná technika, nakladacie rampy a servis</h1>
+      <p class="uvod">Predávame vysokozdvižné a paletové vozíky, nakladacie rampy a príslušenstvo. Staráme sa o ich servis a náhradné diely, aby sklad a výroba stáli čo najmenej.</p>
+      <div class="tlacitka"><a class="tlacitko" href="#kontakt">Napísať dopyt</a><a class="tlacitko druhe" href="#produkty">Pozrieť produkty</a></div>
+    </div>
+    <div class="hero-obrazky" aria-hidden="false">
+      <div class="panel"></div>
+      {{ img('p_vzv1.jpg', 'Vysokozdvižný vozík', sizes='(min-width: 60rem) 24rem, 60vw', cls='h1o') }}
+      {{ img('p_aku_technika1.jpg', 'Elektrický paletový vozík', sizes='(min-width: 60rem) 16rem, 40vw', cls='h2o') }}
+      {{ img('p_zdvizne_plosiny.jpg', 'Zdvižná plošina', sizes='(min-width: 60rem) 14rem, 36vw', cls='h3o') }}
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="produkty">
+  <div class="wrap">
+    <div class="hlava"><h2>Produkty</h2><p>Vyberieme zariadenie, ktoré zodpovedá Vašej prevádzke: skladu, výrobnej hale aj logistickému centru.</p></div>
+    <ul role="list" class="karty">
+      <li class="karta"><div class="fotka">{{ img('p_rucna_technika.jpg', 'Ručná manipulačná technika', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Ručná manipulačná technika</h3><p>Ručné paletové vozíky, vozíky a plošinové vozíky na každodennú prácu v sklade.</p></li>
+      <li class="karta"><div class="fotka">{{ img('p_aku_technika1.jpg', 'Ručné akumulátorové vozíky', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Ručné akumulátorové vozíky</h3><p>Elektrické paletové vozíky a vyvážače. Ponúkame aj výmenu olovených akumulátorov za Li-ion.</p></li>
+      <li class="karta"><div class="fotka">{{ img('p_vzv1.jpg', 'Vysokozdvižné vozíky motorové', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Vysokozdvižné vozíky</h3><p>Elektrické, dieselové, LPG aj terénne vozíky.</p></li>
+      <li class="karta"><div class="fotka">{{ img('p_viazaca_technika.jpg', 'Viazacia technika', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Viazacia technika</h3><p>Popruhy a viazacie pásy na zabezpečenie nákladu.</p></li>
+      <li class="karta"><div class="fotka">{{ img('p_zdvizne_plosiny.jpg', 'Zdvižné plošiny', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Zdvižné plošiny</h3><p>Nožnicové zdvižné stoly a plošiny pre dielne a sklady.</p></li>
+      <li class="karta"><div class="fotka">{{ img('p_vcelku.jpg', 'Zariadenia ku skladom', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Zariadenia ku skladom</h3><p>Manipulačné nadstavce a doplnky pre skladovú techniku.</p></li>
+    </ul>
+    <p class="poznamka">Zákazková výroba manipulačnej techniky je tiež súčasťou ponuky. Napíšte nám, čo potrebujete.</p>
+  </div>
+</section>
+
+<section class="sekce siva" id="rampy">
+  <div class="wrap dvojstlpec">
+    <div class="text">
+      <h2>Nakladacie rampy</h2>
+      <p>Rampy sú určené na bezpečnú a rýchlu nakládku kamiónov, kontajnerov a skladových priestorov. Vyrábame ich aj na mieru.</p>
+      <div class="dva">
+        <div><h3>Pojazdné</h3><ul class="odrazky"><li>jednoduché presúvanie</li><li>vysoká nosnosť</li><li>robustná konštrukcia</li><li>pre rôzne typy vozíkov</li></ul></div>
+        <div><h3>Stacionárne</h3><ul class="odrazky"><li>maximálna stabilita</li><li>dlhá životnosť</li><li>minimálna údržba</li><li>možnosť výroby na mieru</li></ul></div>
+      </div>
+      <p>Postaráme sa aj o odbornú montáž.</p>
+    </div>
+    <div class="fotka velka">{{ img('p_rampy_kopie.jpg', 'Nakladacie rampy', sizes='(min-width: 60rem) 34rem, 92vw') }}</div>
+  </div>
+</section>
+
+<section class="sekce" id="servis">
+  <div class="wrap dvojstlpec obrat">
+    <div class="fotka velka">{{ img('p_servis.jpg', 'Servis manipulačnej techniky', sizes='(min-width: 60rem) 30rem, 92vw') }}</div>
+    <div class="text">
+      <h2>Servis vozíkov</h2>
+      <p>Opravujeme a udržiavame vysokozdvižné aj paletové vozíky, ručné, elektrické i nízkozdvižné. Poruchu vieme rýchlo nájsť vďaka diagnostike.</p>
+      <ul class="odrazky">
+        <li>diagnostika porúch a technické prehliadky</li>
+        <li>servis motorov, prevodoviek, hydrauliky a elektroniky</li>
+        <li>výmena opotrebovaných dielov, kolies a pneumatík</li>
+        <li>servis batérií, nabíjačiek a elektrických komponentov</li>
+        <li>pravidelná údržba podľa odporúčaní výrobcu</li>
+      </ul>
+      <p><strong>Mobilný servis:</strong> technik príde priamo k Vám a opraví vozík na mieste. Pri väčšom zásahu zabezpečíme odvoz do našej dielne.</p>
+      <p><strong>Revízie:</strong> vozíky nepodliehajú klasickej STK, ale povinným technickým revíziám. Zabezpečíme ich vrátane revízií LPG zariadení.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce siva" id="diely">
+  <div class="wrap">
+    <div class="hlava"><h2>Náhradné diely</h2><p>Diely pre elektrické, dieselové aj LPG vozíky a pre paletové vozíky. Pri dieloch, ktoré nemáme skladom, hľadáme dodanie do 24 hodín.</p></div>
+    <ul role="list" class="diely">
+      <li>Hydraulické komponenty</li><li>Motorové diely a filtre</li><li>Pneumatiky a kolesá</li><li>Elektrické časti a batérie</li><li>Brzdové systémy</li><li>Mastivá a oleje</li><li>Vidlice, reťaze a stožiare</li><li>Diely pre paletové vozíky</li>
+    </ul>
+    <p class="znacky"><span>Značky:</span> DESTA, BELET, BT, BALKANCAR, DETVAN, LINDE, HYSTER, TAILIFT, BAOLI, HANGCHA, CATERPILLAR, JUNGHEINRICH, CESAB, TOYOTA, CLARK, TCM, XILIN, ARAGE, SB INMART</p>
+    <p class="poznamka">Neviete, ktorý diel potrebujete? Pomôžeme Vám podľa typu, modelu a roku výroby vozíka.</p>
+  </div>
+</section>
+
+<section class="sekce" id="kontakt">
+  <div class="wrap dvojstlpec">
+    <div class="text">
+      <h2>Kontakt</h2>
+      <address>
+        <strong>VYVOND, s.r.o.</strong><br>Francúzskych partizánov 4628<br>038 61 Vrútky<br>IČO {{ site.ico }}
+      </address>
+      <dl class="kontakty">
+        <dt>Predaj</dt><dd><a href="tel:+421908901917">0908 901 917</a>, <a href="tel:+421908941255">0908 941 255</a></dd>
+        <dt>Náhradné diely</dt><dd><a href="tel:+421905240677">0905 240 677</a></dd>
+        <dt>Servis</dt><dd><a href="tel:+421908941255">0908 941 255</a></dd>
+        <dt>Ústredňa</dt><dd><a href="tel:+421434270476">043/42 704 76</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></dd>
+      </dl>
+      <div class="fotka budova">{{ img('budova.jpg', 'Predajňa VYVOND vo Vrútkach', sizes='(min-width: 60rem) 34rem, 92vw') }}</div>
+    </div>
+    <div class="text">
+      <h3>Napíšte nám</h3>
+      <form class="formular" method="post" data-endpoint="" data-demo="1">
+        <label>Meno <input name="jmeno" autocomplete="name" required></label>
+        <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+        <label>Telefón <input name="telefon" type="tel" autocomplete="tel"></label>
+        <label>Správa <textarea name="zprava" rows="5" required></textarea></label>
+        <div class="past" aria-hidden="true"><label>Nevyplňovať <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+        <button type="submit">Odoslať</button>
+        <p class="formular-stav" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
