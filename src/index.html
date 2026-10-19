@@ -8,13 +8,11 @@
       <p class="stitok">Vrútky · dodávky po celom Slovensku</p>
       <h1>Manipulačná technika, nakladacie rampy a servis</h1>
       <p class="uvod">Predávame vysokozdvižné a paletové vozíky, nakladacie rampy a príslušenstvo. Staráme sa o ich servis a náhradné diely, aby sklad a výroba stáli čo najmenej.</p>
-      <div class="tlacitka"><a class="tlacitko" href="#kontakt">Napísať dopyt</a><a class="tlacitko druhe" href="#produkty">Pozrieť produkty</a></div>
+      <div class="tlacitka"><a class="tlacitko" href="#kontakt">Napísať dopyt</a><a class="tlacitko druhe" href="tel:+421908901917">Predaj 0908 901 917</a></div>
     </div>
-    <div class="hero-obrazky" aria-hidden="false">
-      <div class="panel"></div>
-      {{ img('p_vzv1.jpg', 'Vysokozdvižný vozík', sizes='(min-width: 60rem) 24rem, 60vw', cls='h1o') }}
-      {{ img('p_aku_technika1.jpg', 'Elektrický paletový vozík', sizes='(min-width: 60rem) 16rem, 40vw', cls='h2o') }}
-      {{ img('p_zdvizne_plosiny.jpg', 'Zdvižná plošina', sizes='(min-width: 60rem) 14rem, 36vw', cls='h3o') }}
+    <div class="hero-obrazky">
+      <div class="budova-hero">{{ img('budova.jpg', 'Predajňa VYVOND vo Vrútkach', sizes='(min-width: 60rem) 40rem, 100vw') }}</div>
+      {{ img('av_25.jpg', 'Vysokozdvižný vozík', sizes='(min-width: 60rem) 16rem, 55vw', cls='h1o') }}
     </div>
   </div>
 </section>
@@ -23,12 +21,12 @@
   <div class="wrap">
     <div class="hlava"><h2>Produkty</h2><p>Vyberieme zariadenie, ktoré zodpovedá Vašej prevádzke: skladu, výrobnej hale aj logistickému centru.</p></div>
     <ul role="list" class="karty">
-      <li class="karta"><div class="fotka">{{ img('p_rucna_technika.jpg', 'Ručná manipulačná technika', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Ručná manipulačná technika</h3><p>Ručné paletové vozíky, vozíky a plošinové vozíky na každodennú prácu v sklade.</p></li>
-      <li class="karta"><div class="fotka">{{ img('p_aku_technika1.jpg', 'Ručné akumulátorové vozíky', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Ručné akumulátorové vozíky</h3><p>Elektrické paletové vozíky a vyvážače. Ponúkame aj výmenu olovených akumulátorov za Li-ion.</p></li>
-      <li class="karta"><div class="fotka">{{ img('p_vzv1.jpg', 'Vysokozdvižné vozíky motorové', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Vysokozdvižné vozíky</h3><p>Elektrické, dieselové, LPG aj terénne vozíky.</p></li>
-      <li class="karta"><div class="fotka">{{ img('p_viazaca_technika.jpg', 'Viazacia technika', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Viazacia technika</h3><p>Popruhy a viazacie pásy na zabezpečenie nákladu.</p></li>
-      <li class="karta"><div class="fotka">{{ img('p_zdvizne_plosiny.jpg', 'Zdvižné plošiny', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Zdvižné plošiny</h3><p>Nožnicové zdvižné stoly a plošiny pre dielne a sklady.</p></li>
-      <li class="karta"><div class="fotka">{{ img('p_vcelku.jpg', 'Zariadenia ku skladom', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Zariadenia ku skladom</h3><p>Manipulačné nadstavce a doplnky pre skladovú techniku.</p></li>
+      <li class="karta"><div class="fotka">{{ img('nf_20nl300.jpg', 'Ručný paletový vozík', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Ručná manipulačná technika</h3><p>Ručné paletové vozíky a ďalšie vozíky na každodennú prácu v sklade.</p></li>
+      <li class="karta"><div class="fotka">{{ img('cbd15.jpg', 'Elektrický paletový vozík', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Ručné akumulátorové vozíky</h3><p>Elektrické paletové vozíky. Ponúkame aj výmenu olovených akumulátorov za Li-ion.</p></li>
+      <li class="karta"><div class="fotka">{{ img('av_25.jpg', 'Vysokozdvižný vozík', sizes='(min-width: 60rem) 22rem, 90vw') }}</div><h3>Vysokozdvižné vozíky</h3><p>Elektrické, dieselové, LPG aj terénne vozíky.</p></li>
+    </ul>
+    <ul role="list" class="chipy">
+      <li>Viazacia technika</li><li>Zdvižné plošiny</li><li>Zariadenia ku skladom</li><li>Rampy pojazdné a stacionárne</li><li>Zákazková výroba</li>
     </ul>
     <p class="poznamka">Zákazková výroba manipulačnej techniky je tiež súčasťou ponuky. Napíšte nám, čo potrebujete.</p>
   </div>
@@ -49,7 +47,7 @@
   </div>
 </section>
 
-<section class="sekce" id="servis">
+<section class="sekce servis-pas" id="servis">
   <div class="wrap dvojstlpec obrat">
     <div class="fotka velka">{{ img('p_servis.jpg', 'Servis manipulačnej techniky', sizes='(min-width: 60rem) 30rem, 92vw') }}</div>
     <div class="text">
@@ -63,6 +61,7 @@
         <li>pravidelná údržba podľa odporúčaní výrobcu</li>
       </ul>
       <p><strong>Mobilný servis:</strong> technik príde priamo k Vám a opraví vozík na mieste. Pri väčšom zásahu zabezpečíme odvoz do našej dielne.</p>
+      <a class="tlacitko cervene" href="tel:+421908941255">Servis 0908 941 255</a>
       <p><strong>Revízie:</strong> vozíky nepodliehajú klasickej STK, ale povinným technickým revíziám. Zabezpečíme ich vrátane revízií LPG zariadení.</p>
     </div>
   </div>

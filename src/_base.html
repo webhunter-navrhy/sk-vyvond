@@ -28,6 +28,7 @@
     <nav aria-label="Hlavné">
       {% for n in site.nav %}<a href="{{ n.href if n.href.startswith(('#', 'http', 'tel:', 'mailto:')) else url(n.href) }}">{{ n.text }}</a> {% endfor %}
     </nav>
+    <a class="hl-tel" href="tel:+421908901917">0908 901 917</a>
   </div>
 </header>
 <main id="obsah">

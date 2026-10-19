@@ -145,3 +145,37 @@ button[type="submit"] { justify-self: start; border-radius: 2px; font-weight: 60
 .logo { gap: 0.6rem; } .logo-text { font-size: 1.35rem; letter-spacing: 0.02em; } .logo-text small { font-size: 0.7em; font-weight: 600; color: var(--muted); }
 .karta .fotka img { max-width: 24rem; margin-inline: auto; }
 .fotka.velka img { max-width: 100%; }
+
+/* v2: kompaktní hlavička, hero s fotkou prodejny, karty s jednou fotkou, servis jako tmavý pruh */
+.hlavicka .wrap { min-height: 4rem; flex-wrap: nowrap; }
+.hl-tel { background: var(--red); color: #fff; font-weight: 800; text-decoration: none; padding: 0.55rem 1rem; display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap; border-radius: 2px; }
+.hl-tel:hover { background: #c41f1f; }
+.hlavicka nav { flex: 1; justify-content: flex-end; margin-right: var(--space-2); }
+@media (max-width: 52rem) { .hlavicka nav { display: none; } .hlavicka .wrap { justify-content: space-between; } }
+.hero-grid { padding-block: var(--space-4) var(--space-5); }
+.hero-obrazky { aspect-ratio: auto; }
+.hero-obrazky .budova-hero { position: relative; }
+.hero-obrazky .budova-hero::before { content: ""; position: absolute; inset: 0; background: var(--blue); transform: translate(-0.9rem, 0.9rem); clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); }
+.hero-obrazky .budova-hero img { position: relative; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 66% 50%; clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); filter: none; }
+.hero-obrazky img.h1o { position: absolute; width: 38%; left: -4%; bottom: -6%; height: auto; aspect-ratio: auto; object-fit: contain; clip-path: none; background: #fff; padding: 0.4rem; box-shadow: 0 14px 24px rgba(16,24,40,.25); }
+.hero-obrazky .panel, .hero-obrazky .h2o, .hero-obrazky .h3o { display: none; }
+.karty { grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); }
+.karta p { font-size: var(--step-0); }
+.karta .fotka { aspect-ratio: 4 / 3; }
+.karta .fotka img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.chipy { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: var(--space-3) 0 0; padding: 0; list-style: none; }
+.chipy li { border: 2px solid var(--text); padding: 0.55rem 1rem; font-weight: 800; }
+.servis-pas { background: var(--text); color: #fff; }
+.servis-pas .text p, .servis-pas .odrazky li { color: #e6eaf2; }
+.servis-pas .text p strong { color: #fff; }
+.servis-pas .fotka.velka { background: transparent; border: 0; padding: 0; }
+.servis-pas .fotka.velka img { width: 100%; max-height: 30rem; object-fit: cover; }
+.tlacitko.cervene { background: var(--red); justify-self: start; margin-top: var(--space-1); }
+.tlacitko.cervene:hover { background: #c41f1f; }
+.siva + .servis-pas, .servis-pas + .siva { margin: 0; }
+#rampy { padding-block: var(--space-5); }
+.karty { margin-bottom: var(--space-4); }
+.chipy { margin-top: var(--space-4); }
+.logo-text, .logo-text small { white-space: nowrap; }
+.logo-text small { display: inline; }
+@media (max-width: 52rem) { .hero-obrazky img.h1o { left: 0; width: 34%; } .hero-grid { padding-bottom: var(--space-4); } }
